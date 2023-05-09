@@ -130,8 +130,6 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20
 exec_always --no-startup-id killall polybar &
 exec_always --no-startup-id killall picom &
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
-exec_always --no-startup-id xrandr --output HDMI1 --auto --left-of eDP1
-exec_always --no-startup-id xrandr --output HDMI1 --primary
 exec_always --no-startup-id feh --bg-fill ~/.config/wallpapers/snowfall.jpg
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf --vsync &
 

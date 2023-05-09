@@ -20,7 +20,7 @@ alias v="nvim"
 alias home="cd ~"
 alias dw="cd ~/Scaricati"
 alias cfg="cd ~/.config"
-
+alias zshconfig="nvim ~/.zshrc"
 
 
 

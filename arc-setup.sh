@@ -1,6 +1,6 @@
 #!/bin/env bash
 
-pacman -Sy neovim alacritty i3 polybar picom zsh dunst rofi htop feh thunar xclip discord pavucontrol neofetch pipewire pipewire-pulse pipewire-media-session google-chrome reflector exa
+pacman -Sy neovim alacritty i3 polybar picom zsh dunst rofi htop feh thunar xclip discord pavucontrol neofetch pipewire pipewire-pulse pipewire-media-session google-chrome reflector exa i3blocks fd ripgrep
 
 ln -s $HOME/dotfiles/nvim ~/.config
 ln -s $HOME/dotfiles/alacritty ~/.config
