@@ -1,12 +1,20 @@
 #!/usr/bin/bash
 
 if [[ "${BLOCK_BUTTON}" -eq 4 ]]; then
-  xbacklight -inc 5
+  xbacklight -inc 10
 elif [[ "${BLOCK_BUTTON}" -eq 5 ]]; then
-  xbacklight -dec 5
+  xbacklight -dec 10
 fi
 
-echo ${xbacklight -get}
+brightness=$(xbacklight -get)
+short=${brightness:0:3}
 
+if [[ "${short}" == "100" ]]; then
+  echo ${short}%
+  echo ""
+else
+  echo ${short:0:2}%
+  echo ""
+fi
 
 
