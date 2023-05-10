@@ -87,7 +87,9 @@ local on_attach = function(_, bufnr)
     end, { desc = 'Format current buffer with LSP' })
 end
 
-require('neodev').setup()
+require('neodev').setup({
+    library = { plugins = { "nvim-dap-ui" }, types = true },
+})
 
 lspconfig.lua_ls.setup {
     capabilities = capabilities,
@@ -126,7 +128,7 @@ lspconfig['gopls'].setup {
                 deepequalerrors = true,
                 embed = true,
                 errorsas = true,
-                fieldalignment = false,
+                fieldalignment = true,
                 httpresponse = true,
                 ifaceassert = true,
                 loopclosure = true,
@@ -150,13 +152,15 @@ lspconfig['gopls'].setup {
                 unmarshal = true,
                 unreachable = true,
                 unsafeptr = true,
-                unusedparams = false,
+                unusedparams = true,
                 unusedresult = true,
                 unusedvariable = true,
                 unusedwrite = true,
                 useany = true,
             },
+            completeUnimported = true,
             staticcheck = true,
+            semanticTokens = true,
             gofumpt = true,
             hoverKind = "FullDocumentation",
             linkTarget = "pkg.go.dev",
@@ -165,20 +169,6 @@ lspconfig['gopls'].setup {
         },
     },
 }
-
--- lspconfig.golangci_lint_ls.setup {
---     capabilities = capabilities,
---     on_attach = on_attach,
---     settings = {
---         gopls = {
---             gofumpt = true,
---         },
---     },
---     flags = {
---         debounce_text_changes = 150,
---     },
--- }
-
 
 local format_sync_grp = vim.api.nvim_create_augroup("GoImport", {})
 vim.api.nvim_create_autocmd("BufWritePre", {
@@ -199,13 +189,6 @@ rt.setup({
         end,
     },
 })
-lspconfig['rust_analyzer'].setup {
-    capabilities = capabilities,
-    on_attach = on_attach,
-    cmd = {
-        "rustup", "run", "stable", "rust-analyzer",
-    },
-    diagnostics = {
-        enable = true
-    }
-}
+
+
+vim.g.rustfmt_autosave = 1
