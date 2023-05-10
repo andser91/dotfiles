@@ -13,11 +13,17 @@ fi
 
 statusLine=$(amixer get Capture | tail -n 1)
 status=$(echo "${statusLine}" | grep -wo "on")
-volume=$(echo "${statusLine}" | awk -F ' ' '{print $5}' | tr -d '[]%')
+volume1=$(echo "${statusLine}" | awk -F ' ' '{print $5}' | tr -d '[]%')
+volume2=$(echo "${statusLine}" | awk -F ' ' '{print $4}' | tr -d '[]%')
 
 if [[ "${status}" == "on" ]]; then
-  echo "${volume}%"
-  echo ""
+  if [[ "${volume1}" == "on" ]]; then
+    echo "${volume2}%"
+    echo ""
+  else
+    echo "${volume1}%"
+    echo ""
+  fi
 else
   echo "off"
   echo ""
