@@ -21,6 +21,7 @@ alias home="cd ~"
 alias dw="cd ~/Scaricati"
 alias cfg="cd ~/.config"
 alias zshconfig="nvim ~/.zshrc"
+alias zshsource="source ~/.zshrc"
 
 # Pacman
 alias unin="sudo pacman -Rns"
@@ -30,5 +31,6 @@ alias update="sudo pacman -Syyy"
 alias cp="cp -r"
 alias rm="rm -rf"
 
+alias neofetch="neofetch --jp2a ~/.config/neofetch/jolly-roger-rufy.jpg"
 
 
