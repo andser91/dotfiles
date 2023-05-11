@@ -179,6 +179,10 @@ vim.api.nvim_create_autocmd("BufWritePre", {
     group = format_sync_grp,
 })
 
+vim.keymap.set("n", "<leader>tg", ":GoAddTag<CR>")
+vim.keymap.set("n", "<leader>rtg", ":GoRmTag<CR>")
+vim.keymap.set("n", "<leader>er", ":GoIfErr<CR>")
+
 local rt = require("rust-tools")
 
 rt.setup({
