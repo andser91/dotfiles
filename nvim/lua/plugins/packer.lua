@@ -71,15 +71,20 @@ return require('packer').startup(function(use)
 	  "hrsh7th/cmp-buffer",
 	  "hrsh7th/cmp-path",
 	  "hrsh7th/cmp-nvim-lua",
-	  "hrsh7th/cmp-vsnip",
-	  "hrsh7th/vim-vsnip",
+	  'L3MON4D3/LuaSnip',
+	  'saadparwaiz1/cmp_luasnip',
 	  "ray-x/go.nvim",
 	  "ray-x/guihua.lua",
 	  "simrat39/rust-tools.nvim",
 	  "j-hui/fidget.nvim",
 	  "folke/neodev.nvim",
 	  "rust-lang/rust.vim",
+	   "folke/trouble.nvim",
+	   "folke/todo-comments.nvim",
   }
+  use "folke/noice.nvim"
+  use "MunifTanjim/nui.nvim"
+  use "rcarriga/nvim-notify"
   use 'mfussenegger/nvim-dap'
   use 'rcarriga/nvim-dap-ui'
   use 'leoluz/nvim-dap-go'
