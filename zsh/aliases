@@ -11,7 +11,7 @@ alias tree="exa -T --color=always --icons --group-directories-first"
 alias ga="git add ."
 alias gp="git push"
 alias gm="git commit"
-
+alias gl='git log --graph --pretty="%C(yellow) Hash: %h %C(blue)Date: %ad %C(red) Message: %s " --date=human'
 
 ### nvim
 alias v="nvim"
@@ -20,6 +20,8 @@ alias v="nvim"
 alias home="cd ~"
 alias dw="cd ~/Scaricati"
 alias cfg="cd ~/.config"
+alias proj="cd ~/Projects/"
+alias chorally="~/Projects/chorally/"
 alias zshconfig="nvim ~/.zshrc"
 alias zshsource="source ~/.zshrc"
 
