@@ -130,7 +130,13 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym $mod+p exec /usr/local/bin/switch-audio-port
 
 ## App shortcuts
-bindsym Print exec scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/Immagini/screenshot/$(date +"%Y-%m-%d-%T")-screenshot.png"
+
+
+bindsym Print exec maim ~/Immagini/screenshot/`date +"%y-%m-%d-%T"`.png
+bindsym $mod+Print exec maim --window $(xdotool getactivewindow) ~/Immagini/screenshot/`date +"%y-%m-%d-%T"`.png
+
+bindsym Shift+Print exec maim --select ~/Immagini/screenshot/`date +"%y-%m-%d-%T"`.png
+
 
 ##############
 # compositor #
