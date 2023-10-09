@@ -35,4 +35,8 @@ alias rm="rm -rf"
 
 alias neofetch="neofetch --jp2a ~/.config/neofetch/jolly-roger-rufy.jpg"
 
+# Network
+alias port-listening="sudo ss -tulpn | grep LISTEN"
+
+
 
