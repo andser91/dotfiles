@@ -22,6 +22,7 @@ alias dw="cd ~/Scaricati"
 alias cfg="cd ~/.config"
 alias proj="cd ~/Projects/"
 alias chorally="~/Projects/chorally/"
+alias navarcos="~/Projects/navarcos/"
 alias zshconfig="nvim ~/.zshrc"
 alias zshsource="source ~/.zshrc"
 
