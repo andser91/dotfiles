@@ -1,6 +1,8 @@
 #!/bin/env bash
 
-pacman -Sy neovim alacritty i3 i3blocks picom zsh dunst rofi htop feh thunar xclip discord pavucontrol neofetch pipewire pipewire-pulse pipewire-media-session google-chrome reflector exa fd ripgrep obsidian qt5ct kvantum
+pacman -Sy neovim alacritty i3-wm i3blocks picom zsh dunst rofi htop feh thunar xclip discord pavucontrol neofetch pipewire pipewire-pulse pipewire-media-session reflector exa fd ripgrep qt5ct kvantum tree docker docker-compose 
+
+yay -Sy google-chrome
 
 ln -s $HOME/dotfiles/nvim ~/.config
 ln -s $HOME/dotfiles/alacritty ~/.config
