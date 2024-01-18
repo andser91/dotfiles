@@ -14,5 +14,7 @@ ln -s $HOME/dotfiles/dunst ~/.config
 ln -s $HOME/dotfiles/rofi ~/.config
 ln -s $HOME/dotfiles/htop ~/.config
 ln -s $HOME/dotfiles/wallpapers ~/.config
+ln -s $HOME/dotfiles/lesspipe/.lesskey ~
+ln -s $HOME/dotfiles/lesspipe/.lessfilter ~
 rm -rf $HOME/.config/neofetch && ln -s $HOME/dotfiles/neofetch ~/.config
 sudo ln -s $HOME/dotfiles/Fluent-Dark-compact /usr/share/themes
