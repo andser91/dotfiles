@@ -1,6 +1,6 @@
 #!/bin/env bash
 
-pacman -Sy neovim alacritty i3-wm i3blocks picom zsh dunst rofi htop feh thunar xclip discord pavucontrol neofetch pipewire pipewire-pulse pipewire-media-session reflector exa fd ripgrep qt5ct kvantum tree docker docker-compose bat 
+pacman -Sy neovim alacritty i3-wm i3blocks picom zsh dunst rofi htop feh thunar xclip discord pavucontrol neofetch pipewire pipewire-pulse pipewire-media-session reflector exa fd ripgrep qt5ct kvantum tree docker docker-compose bat chafa perl-image-exiftool
 
 yay -Sy google-chrome whitesur-icon-theme
 
