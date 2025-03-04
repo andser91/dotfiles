@@ -21,6 +21,7 @@ ln -s $HOME/dotfiles/lesspipe/.lessfilter ~
 ln -s $HOME/dotfiles/git/.gitconfig ~
 ln -s $HOME/dotfiles/bat ~/.config
 ln -s $HOME/dotfiles/btop ~/.config
+ln -s $HOME/dotfiles/tmux ~/.config
 
 rm -rf $HOME/.config/neofetch && ln -s $HOME/dotfiles/neofetch ~/.config
 sudo ln -s $HOME/dotfiles/Fluent-Dark-compact /usr/share/themes
