@@ -17,6 +17,12 @@ alias gl='git log --graph --pretty="%C(yellow) Hash: %h %C(blue)Date: %ad %C(red
 ### nvim
 alias v="nvim"
 
+### cat
+alias cat="bat"
+
+### cd
+alias cd="z"
+
 ### my shortcut
 alias home="cd ~"
 alias dw="cd ~/Scaricati"
@@ -32,8 +38,8 @@ alias unin="sudo pacman -Rns"
 alias install="sudo pacman -S"
 alias update="sudo pacman -Syyy"
 
-alias cp="cp -r"
-alias rm="rm -rf"
+alias cp="cp -i"
+alias mv="mv -i"
 
 alias neofetch="neofetch --jp2a ~/.config/neofetch/jolly-roger-rufy.jpg"
 

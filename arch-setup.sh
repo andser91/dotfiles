@@ -1,6 +1,8 @@
 #!/bin/env bash
 
-pacman -Sy neovim alacritty i3-wm i3blocks picom zsh dunst rofi htop feh thunar xclip discord pavucontrol neofetch pipewire pipewire-pulse pipewire-media-session reflector exa fd ripgrep qt5ct kvantum tree docker docker-compose bat chafa perl-image-exiftool
+pacman -Sy neovim alacritty i3-wm i3blocks picom zsh dunst rofi btop feh xclip discord pavucontrol neofetch \
+  pipewire pipewire-pulse pipewire-media-session reflector eza fd ripgrep qt5ct kvantum docker docker-compose \
+  bat chafa perl-image-exiftool thefuck zoxide tlrc yazi
 
 yay -Sy google-chrome whitesur-icon-theme
 
@@ -17,5 +19,8 @@ ln -s $HOME/dotfiles/wallpapers ~/.config
 ln -s $HOME/dotfiles/lesspipe/.lesskey ~
 ln -s $HOME/dotfiles/lesspipe/.lessfilter ~
 ln -s $HOME/dotfiles/git/.gitconfig ~
+ln -s $HOME/dotfiles/bat ~/.config
+ln -s $HOME/dotfiles/btop ~/.config
+
 rm -rf $HOME/.config/neofetch && ln -s $HOME/dotfiles/neofetch ~/.config
 sudo ln -s $HOME/dotfiles/Fluent-Dark-compact /usr/share/themes
