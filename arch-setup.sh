@@ -2,7 +2,7 @@
 
 pacman -Sy neovim alacritty i3-wm i3blocks picom zsh dunst rofi btop feh xclip discord pavucontrol neofetch \
   pipewire pipewire-pulse pipewire-media-session reflector eza fd ripgrep qt5ct kvantum docker docker-compose \
-  bat chafa perl-image-exiftool thefuck zoxide tlrc yazi
+  bat chafa perl-image-exiftool thefuck zoxide tlrc yazi tmux
 
 yay -Sy google-chrome whitesur-icon-theme
 

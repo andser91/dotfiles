@@ -252,11 +252,7 @@ bindsym $mod+t exec rofi -show window \
 
 
 # Scratchpad
-bindsym $mod+j exec ~/.config/i3/scripts/i3_scratchpad_show_or_create.sh 'thunar' 'thunar'
-
-bindsym $mod+k exec ~/.config/i3/scripts/i3_scratchpad_show_or_create.sh 'alacritty' 'alacritty'
-
-bindsym $mod+n exec ~/.config/i3/scripts/i3_scratchpad_show_or_create.sh 'htop' 'alacritty -e htop'
+bindsym $mod+n exec ~/.config/i3/scripts/i3_scratchpad_show_or_create.sh 'btop' 'alacritty -e btop'
 
 bindsym $mod+m exec ~/.config/i3/scripts/i3_scratchpad_show_or_create.sh 'pavucontrol' 'pavucontrol'
 

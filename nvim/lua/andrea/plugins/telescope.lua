@@ -26,5 +26,6 @@ return {
 		vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "Find buffer" })
 		vim.keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", { desc = "Find help tag" })
 		vim.keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find help tag" })
+		vim.keymap.set("n", "<leader>fm", "<cmd>Telescope marks<cr>", { desc = "Find help tag" })
 	end,
 }
