@@ -11,7 +11,7 @@ ln -s $HOME/dotfiles/alacritty ~/.config
 ln -s $HOME/dotfiles/i3 ~/.config
 ln -s $HOME/dotfiles/polybar ~/.config
 ln -s $HOME/dotfiles/picom ~/.config
-ln -s $HOME/dotfiles/zsh ~/.config
+ln -s $HOME/dotfiles/zsh/aliases ~/.config/zsh/
 ln -s $HOME/dotfiles/dunst ~/.config
 ln -s $HOME/dotfiles/rofi ~/.config
 ln -s $HOME/dotfiles/htop ~/.config
@@ -23,6 +23,8 @@ ln -s $HOME/dotfiles/bat ~/.config
 ln -s $HOME/dotfiles/btop ~/.config
 ln -s $HOME/dotfiles/tmux ~/.config
 ln -s $HOME/dotfiles/yazi ~/.config
+ln -s $HOME/dotfiles/zsh/.zshrc ~
+
 
 rm -rf $HOME/.config/neofetch && ln -s $HOME/dotfiles/neofetch ~/.config
 sudo ln -s $HOME/dotfiles/Fluent-Dark-compact /usr/share/themes
