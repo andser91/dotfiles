@@ -47,4 +47,5 @@ alias neofetch="neofetch --jp2a ~/.config/neofetch/jolly-roger-rufy.jpg"
 alias port-listening="sudo ss -tulpn | grep LISTEN"
 
 
-
+alias llmu="docker-compose -f ~/deepseek-local/docker-compose.yaml --profile gpu-nvidia up"
+alias llmd="docker-compose  -f ~/deepseek-local/docker-compose.yaml --profile gpu-nvidia down"
