@@ -1,8 +1,8 @@
 #!/bin/env bash
 
-pacman -Sy neovim alacritty i3-wm i3blocks picom zsh dunst rofi btop feh xclip discord pavucontrol neofetch \
+yay -Sy neovim alacritty i3blocks picom zsh dunst rofi btop feh xclip discord pavucontrol neofetch \
   pipewire pipewire-pulse pipewire-media-session reflector eza fd ripgrep qt5ct kvantum docker docker-compose \
-  bat chafa perl-image-exiftool thefuck zoxide tlrc yazi tmux
+  bat chafa perl-image-exiftool thefuck zoxide tlrc yazi tmux atuin jq yq htmlq jless httpie
 
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 yay -Sy google-chrome whitesur-icon-theme
@@ -25,7 +25,6 @@ ln -s $HOME/dotfiles/btop ~/.config
 ln -s $HOME/dotfiles/tmux ~/.config
 ln -s $HOME/dotfiles/yazi ~/.config
 ln -s $HOME/dotfiles/zsh/.zshrc ~
-ln -s $HOME/dotfiles/themes ~/.config
 
 mkdir ~/.config/i3blocks
 if [[ "$1" == "desktop" ]];

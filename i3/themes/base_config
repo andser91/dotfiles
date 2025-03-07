@@ -187,20 +187,12 @@ for_window [class="urxvt"] border pixel 1
 #####################################
 # Application menu handled by rofi: #
 #####################################
-
-## rofi bindings fancy application menu ($mod+d /F9 optional disabled)
-
 # Power Profiles menu switcher (rofi)
-bindsym $mod+Shift+e exec ~/.config/i3/scripts/powermenu
+bindsym $mod+Shift+e exec ~/.config/rofi/powermenu/powermenu.sh
+bindsym $mod+d exec ~/.config/rofi/launcher/launcher.sh
+bindsym $mod+t exec rofi -show window -config ~/.config/rofi/rofidmenu.rasi
+bindsym $mod+Shift+t exec ~/.config/rofi/theme-switcher/theme-switcher.sh
 
-bindsym $mod+Shift+p exec ~/.config/i3/scripts/power-profiles
-
-
-bindsym $mod+d exec rofi -modi drun -show drun \
-		-config ~/.config/rofi/rofidmenu.rasi
-
-bindsym $mod+t exec rofi -show window \
-		-config ~/.config/rofi/rofidmenu.rasi
 
 # Scratchpad
 bindsym $mod+n exec ~/.config/i3/scripts/i3_scratchpad_show_or_create.sh 'btop' 'alacritty -e btop'
