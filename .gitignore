@@ -4,4 +4,5 @@
 
 ./tmux/tmux-client-1465636.log
 ./tmux/plugins/
+./tmux/plugins/*
 ./yazi/yazi/

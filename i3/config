@@ -177,7 +177,7 @@ exec_always --no-startup-id picom --config  ~/.config/picom/picom.conf
 
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
-exec --no-startup-id feh --bg-fill ~/.config/wallpapers/snowfall.jpg
+exec --no-startup-id ~/.config/i3/scripts/apply_background.sh
 # set powersavings for display:
 exec --no-startup-id xset s 480 dpms 600 600 600
 
@@ -223,11 +223,6 @@ bindsym $mod+Shift+t exec ~/.config/rofi/theme-switcher/theme-switcher.sh
 # Scratchpad
 bindsym $mod+n exec ~/.config/i3/scripts/i3_scratchpad_show_or_create.sh 'btop' 'alacritty -e btop'
 bindsym $mod+m exec ~/.config/i3/scripts/i3_scratchpad_show_or_create.sh 'pavucontrol' 'pavucontrol'
-
-
-
-
-
 
 
 ######################################
