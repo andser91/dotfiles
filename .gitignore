@@ -2,7 +2,7 @@
 ./btop/btop.log
 ./btop/btop.conf
 
-./tmux/tmux-client-1465636.log
-./tmux/plugins/
-./tmux/plugins/*
-./yazi/yazi/
+tmux/tmux-client-1465636.log
+tmux/plugins/
+tmux/plugins/*
+yazi/yazi/
