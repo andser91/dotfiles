@@ -12,6 +12,7 @@ return {
 				typescriptreact = { "prettier" },
 				go = { "goimports-reviser", "gofumt", "golines" },
 				rust = { "rustfmt", lsp_format = "fallback" },
+				java = { "google-java-format" },
 				css = { "prettier" },
 				html = { "prettier" },
 				json = { "prettier" },

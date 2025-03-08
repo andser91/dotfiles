@@ -32,7 +32,7 @@ return {
 				"bashls",
 				"gopls",
 				"jsonls",
-
+				"jdtls",
 				"html",
 				"cssls",
 				"tailwindcss",
@@ -53,6 +53,7 @@ return {
 				"black", -- python formatter
 				"pylint",
 				"eslint_d",
+				"google-java-format",
 			},
 		})
 	end,
