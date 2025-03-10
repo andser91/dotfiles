@@ -7,6 +7,6 @@ tmux/plugins/
 tmux/plugins/*
 yazi/yazi/
 
-./nvim/lazy-lock.json
-./.luarc.json
-./nvim/KEYMAP.md
+nvim/lazy-lock.json
+.luarc.json
+nvim/KEYMAP.md
