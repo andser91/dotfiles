@@ -2,12 +2,11 @@
 ./btop/btop.log
 ./btop/btop.conf
 
-tmux/tmux-client-1465636.log
+tmux/tmux-client**
 tmux/plugins/
-tmux/plugins/*
+tmux/plugins/**
 yazi/yazi/
 
-./nvim/lazy-lock.json
-./nvim/**
+nvim/lazy-lock.json
 .luarc.json
 nvim/KEYMAP.md
