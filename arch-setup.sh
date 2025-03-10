@@ -1,8 +1,42 @@
 #!/bin/env bash
-
-yay -Sy neovim alacritty i3blocks picom zsh dunst rofi btop feh xclip discord pavucontrol neofetch \
-  pipewire pipewire-pulse pipewire-media-session reflector eza fd ripgrep qt5ct kvantum docker docker-compose \
-  bat chafa perl-image-exiftool thefuck zoxide tlrc yazi tmux atuin jq yq htmlq jless httpie
+yay -yy
+yay -S neovim
+yay -S alacritty
+yay -S i3blocks
+yay -S picom
+yay -S zsh
+yay -S dunst
+yay -S rofi
+yay -S btop
+yay -S feh
+yay -S xclip
+yay -S discord
+yay -S pavucontrol
+yay -S pipewire
+yay -S pipewire-pulse
+yay -S pipewire-media-session
+yay -S reflector
+yay -S eza
+yay -S fd
+yay -S ripgrep
+yay -S qt5ct
+yay -S kvantum
+yay -S docker
+yay -S docker-compose
+yay -S bat
+yay -S chafa
+yay -S perl-image-exiftool
+yay -S thefuck
+yay -S zoxide
+yay -S tlrc
+yay -S yazi
+yay -S tmux
+yay -S atuin
+yay -S jq
+yay -S yq
+yay -S htmlq
+yay -S jless
+yay -S httpie
 
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 yay -Sy google-chrome whitesur-icon-theme

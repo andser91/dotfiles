@@ -30,6 +30,8 @@ return {
 					"toml",
 					"java",
 					"rust",
+					"markdown",
+					"markdown_inline",
 					"css",
 					"html",
 					"yaml",
