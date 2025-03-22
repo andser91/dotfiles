@@ -11,8 +11,47 @@ return {
 		local telescope = require("telescope")
 
 		telescope.setup({
+			defaults = {
+				mappings = {
+					n = {
+						["<c-d>"] = require("telescope.actions").delete_buffer,
+					}, -- n
+					i = {
+						["<C-h>"] = "which_key",
+						["<c-d>"] = require("telescope.actions").delete_buffer,
+					}, -- i
+				},
+			},
 			pickers = {
 				find_files = {
+					theme = "ivy",
+					hidden = true,
+				},
+				oldfiles = {
+					theme = "ivy",
+					hidden = true,
+				},
+				live_grep = {
+					theme = "ivy",
+					hidden = true,
+				},
+				buffers = {
+					theme = "ivy",
+					hidden = true,
+				},
+				keymaps = {
+					theme = "ivy",
+					hidden = true,
+				},
+				grep_string = {
+					theme = "ivy",
+					hidden = true,
+				},
+				TodoTelescope = {
+					theme = "ivy",
+					hidden = true,
+				},
+				marks = {
 					theme = "ivy",
 					hidden = true,
 				},
@@ -35,7 +74,8 @@ return {
 		)
 		vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "Find buffer" })
 		vim.keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", { desc = "Find help tag" })
-		vim.keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find help tag" })
-		vim.keymap.set("n", "<leader>fm", "<cmd>Telescope marks<cr>", { desc = "Find help tag" })
+		vim.keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find Todo" })
+		vim.keymap.set("n", "<leader>fm", "<cmd>Telescope marks<cr>", { desc = "Find marks" })
+		vim.keymap.set("n", "<leader>fk", "<cmd>Telescope keymaps<cr>", { desc = "Find keymaps" })
 	end,
 }
