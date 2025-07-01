@@ -37,6 +37,7 @@ yay -S yq
 yay -S htmlq
 yay -S jless
 yay -S httpie
+yay -S lxappearance
 
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 yay -Sy google-chrome whitesur-icon-theme

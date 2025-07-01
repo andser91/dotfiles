@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-plugins=(git sudo dotenv docker npm zsh-autosuggestions zsh-syntax-highlighting fzf-tab fzf-tab-source)
+plugins=(git kubectl sudo dotenv docker npm zsh-autosuggestions zsh-syntax-highlighting fzf-tab fzf-tab-source)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -19,9 +19,11 @@ source ~/.config/zsh/aliases
 
 export LESSOPEN="|/usr/bin/lesspipe.sh %s"
 export OLLAMA_API_BASE=http://127.0.0.1:11434
-
-export KUBECONFIG=~/.kube/chorally-dev.users.kubeconfig
-export GOPRIVATE=gitlab.navarcos.ccoe-nc.com
+export PYENV_ROOT="$HOME/.pyenv"
+export KUBECONFIG=~/.kube/navarcos-dev.kubeconfig
+export GOPRIVATE=gitlab.ccoe.activadigital.it
+export GIT_TERMINAL_PROMPT=0
+export GIT_ASKPASS=/go/git-askpass.sh
 export PATH=$PATH:$HOME/.krew/bin
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
@@ -30,6 +32,8 @@ export PATH=$PATH:/usr/local/apache-maven-3.9.1/bin
 export PATH=$PATH:~/.local/bin
 export PATH=$PATH:/opt/node-v20.17.0-linux-x64/bin
 export PATH=$PATH:/opt/Citrix/ICAClient/
+export PATH="$PYENV_ROOT/bin:$PATH"
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
@@ -41,6 +45,9 @@ export JDTLS_JVM_ARGS="-javaagent:$HOME/.local/share/java/lombok.jar"
 eval $(thefuck --alias fk)
 eval "$(zoxide init zsh)"
 eval "$(fzf --zsh)"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 # (yazi)
 export EDITOR="nvim"
